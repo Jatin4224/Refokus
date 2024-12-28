@@ -4,7 +4,7 @@ const Work = () => {
       url: "https://cdn.prod.website-files.com/664dc8b6bc52b504509197f0/66a2cefa6def1aabe206b2f6_TTR%20-%2016%209%20(A).webp",
       top: "50%",
       left: "50%",
-      isActive: false,
+      isActive: true,
     },
     {
       url: "https://cdn.prod.website-files.com/664dc8b6bc52b504509197f0/6697d8c8de92be5a9bdae6f1_Layout%20Land%20-%2016%209%20(A).webp",

@@ -31,7 +31,7 @@ const Products = () => {
     },
   ];
   return (
-    <div className="bg-black">
+    <div className="bg-zinc-900">
       {products.map((val, elem) => (
         <Product val={val} elem={elem} />
       ))}
