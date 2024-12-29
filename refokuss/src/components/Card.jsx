@@ -1,9 +1,13 @@
 import { FaArrowRightLong } from "react-icons/fa6";
-
-const Card = ({ width, start, para, hover }) => {
+import { motion } from "motion/react";
+const Card = ({ width, start, para, hover = "false" }) => {
   return (
-    <div
-      className={`w-1/2 bg-zinc-800 p-5 rounded-lg hover:${hover} ${width} min-h-[30rem] flex flex-col justify-between`}
+    <motion.div
+      whileHover={{
+        backgroundColor: hover === "true" && "bg-purple-500",
+        padding: "25px",
+      }}
+      className={`w-1/2 bg-zinc-800 p-5 rounded-lg ${width} min-h-[30rem] flex flex-col justify-between`}
     >
       <div className="w-full">
         <div className="w-full flex justify-between items-center">
@@ -29,7 +33,7 @@ const Card = ({ width, start, para, hover }) => {
           </p>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
