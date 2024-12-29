@@ -4,7 +4,7 @@ const Card = ({ width, start, para, hover = "false" }) => {
   return (
     <motion.div
       whileHover={{
-        backgroundColor: hover === "true" && "bg-purple-500",
+        backgroundColor: hover === "true" && "#d8b4fe",
         padding: "25px",
       }}
       className={`w-1/2 bg-zinc-800 p-5 rounded-lg ${width} min-h-[30rem] flex flex-col justify-between`}
